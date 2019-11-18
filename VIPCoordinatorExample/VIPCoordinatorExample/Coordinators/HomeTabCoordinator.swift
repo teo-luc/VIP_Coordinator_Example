@@ -16,13 +16,13 @@ enum HomeTabRoute : Route {
 
 class HomeTabCoordinator: TabBarCoordinator<HomeTabRoute> {
     private let contactRouter: StrongRouter<ContactRoute>
-    private let favoritesRouter: StrongRouter<AssetRoute>
+    private let favoritesRouter: StrongRouter<FavoritesRoute>
     
     convenience init(userId: Int, firstName: String, lastName: String) {
         let contactRouter = ContactCoordinator(userId : userId,
                                                firstName: firstName,
                                                lastName: lastName)
-        let assetRouter   = AssetCoordinator()
+        let assetRouter   = FavoritesCoordinator()
         assetRouter.rootViewController.tabBarItem   = UITabBarItem(tabBarSystemItem: .contacts, tag: 0)
         contactRouter.rootViewController.tabBarItem = UITabBarItem(tabBarSystemItem: .favorites, tag: 1)
         self.init(contactRouter: contactRouter.strongRouter,
@@ -31,7 +31,7 @@ class HomeTabCoordinator: TabBarCoordinator<HomeTabRoute> {
     
     
     
-    init(contactRouter: StrongRouter<ContactRoute>, assetRouter: StrongRouter<AssetRoute>) {
+    init(contactRouter: StrongRouter<ContactRoute>, assetRouter: StrongRouter<FavoritesRoute>) {
         self.contactRouter = contactRouter
         self.favoritesRouter = assetRouter
         super.init(tabs: [contactRouter, assetRouter], select: contactRouter)

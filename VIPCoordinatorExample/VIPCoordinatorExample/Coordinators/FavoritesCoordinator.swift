@@ -9,24 +9,24 @@
 import Foundation
 import XCoordinator
 
-enum AssetRoute: Route {
-    case asset
-    case assetDetail
+enum FavoritesRoute: Route {
+    case favorites
+    case favoriteDetail
 }
 
-class AssetCoordinator: NavigationCoordinator<AssetRoute> {
+class FavoritesCoordinator: NavigationCoordinator<FavoritesRoute> {
 
     init() {
-        super.init(initialRoute: .asset)
+        super.init(initialRoute: .favorites)
     }
     
-    override func prepareTransition(for route: AssetRoute) -> NavigationTransition {
+    override func prepareTransition(for route: FavoritesRoute) -> NavigationTransition {
         let container = AppDelegate.share.container
         switch route {
-        case .asset:
+        case .favorites:
             let vc = FavoritesAssembly().resolve(container: container, FavoritesViewController.self)
             return .push(vc)
-        case .assetDetail:
+        case .favoriteDetail:
             break
         }
         return .dismiss()

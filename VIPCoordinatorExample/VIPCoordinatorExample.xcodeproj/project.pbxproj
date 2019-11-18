@@ -36,7 +36,7 @@
 		DD91ACD1237E93FF00D3D5A1 /* FavoritesAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD91ACCA237E93FF00D3D5A1 /* FavoritesAssembly.swift */; };
 		DD91ACD2237E93FF00D3D5A1 /* FavoritesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD91ACCB237E93FF00D3D5A1 /* FavoritesInteractor.swift */; };
 		DD91ACD4237E942A00D3D5A1 /* ContactCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD91ACD3237E942A00D3D5A1 /* ContactCoordinator.swift */; };
-		DD91ACD6237E943700D3D5A1 /* AssetCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD91ACD5237E943700D3D5A1 /* AssetCoordinator.swift */; };
+		DD91ACD6237E943700D3D5A1 /* FavoritesCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD91ACD5237E943700D3D5A1 /* FavoritesCoordinator.swift */; };
 		DD91ACE0237E9F0200D3D5A1 /* ContactPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD91ACD9237E9F0200D3D5A1 /* ContactPresenter.swift */; };
 		DD91ACE1237E9F0200D3D5A1 /* ContactWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD91ACDA237E9F0200D3D5A1 /* ContactWorker.swift */; };
 		DD91ACE2237E9F0200D3D5A1 /* ContactRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD91ACDB237E9F0200D3D5A1 /* ContactRouter.swift */; };
@@ -83,7 +83,7 @@
 		DD91ACCA237E93FF00D3D5A1 /* FavoritesAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesAssembly.swift; sourceTree = "<group>"; };
 		DD91ACCB237E93FF00D3D5A1 /* FavoritesInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesInteractor.swift; sourceTree = "<group>"; };
 		DD91ACD3237E942A00D3D5A1 /* ContactCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactCoordinator.swift; sourceTree = "<group>"; };
-		DD91ACD5237E943700D3D5A1 /* AssetCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetCoordinator.swift; sourceTree = "<group>"; };
+		DD91ACD5237E943700D3D5A1 /* FavoritesCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesCoordinator.swift; sourceTree = "<group>"; };
 		DD91ACD9237E9F0200D3D5A1 /* ContactPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactPresenter.swift; sourceTree = "<group>"; };
 		DD91ACDA237E9F0200D3D5A1 /* ContactWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactWorker.swift; sourceTree = "<group>"; };
 		DD91ACDB237E9F0200D3D5A1 /* ContactRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactRouter.swift; sourceTree = "<group>"; };
@@ -164,7 +164,7 @@
 				DD91AC9F237E929100D3D5A1 /* ApplicationCoordinator.swift */,
 				DD91ACA0237E929100D3D5A1 /* HomeTabCoordinator.swift */,
 				DD91ACD3237E942A00D3D5A1 /* ContactCoordinator.swift */,
-				DD91ACD5237E943700D3D5A1 /* AssetCoordinator.swift */,
+				DD91ACD5237E943700D3D5A1 /* FavoritesCoordinator.swift */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -400,7 +400,7 @@
 				DD91ACE1237E9F0200D3D5A1 /* ContactWorker.swift in Sources */,
 				DD91ACC4237E93EB00D3D5A1 /* HomeInteractor.swift in Sources */,
 				DD91ACD4237E942A00D3D5A1 /* ContactCoordinator.swift in Sources */,
-				DD91ACD6237E943700D3D5A1 /* AssetCoordinator.swift in Sources */,
+				DD91ACD6237E943700D3D5A1 /* FavoritesCoordinator.swift in Sources */,
 				DD91ACB3237E92B900D3D5A1 /* LoginViewController.swift in Sources */,
 				DD91ACCD237E93FF00D3D5A1 /* FavoritesWorker.swift in Sources */,
 				DD91ACD1237E93FF00D3D5A1 /* FavoritesAssembly.swift in Sources */,
