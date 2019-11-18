@@ -14,7 +14,6 @@
 		DD91AC9E237E925100D3D5A1 /* RouterCoordinatorLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD91AC9D237E925100D3D5A1 /* RouterCoordinatorLogic.swift */; };
 		DD91ACA1237E929100D3D5A1 /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD91AC9F237E929100D3D5A1 /* ApplicationCoordinator.swift */; };
 		DD91ACA2237E929100D3D5A1 /* HomeTabCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD91ACA0237E929100D3D5A1 /* HomeTabCoordinator.swift */; };
-		DD91ACA4237E929700D3D5A1 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD91ACA3237E929700D3D5A1 /* Utils.swift */; };
 		DD91ACAE237E92B900D3D5A1 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD91ACA7237E92B900D3D5A1 /* LoginRouter.swift */; };
 		DD91ACAF237E92B900D3D5A1 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD91ACA8237E92B900D3D5A1 /* LoginPresenter.swift */; };
 		DD91ACB0237E92B900D3D5A1 /* LoginModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD91ACA9237E92B900D3D5A1 /* LoginModels.swift */; };
@@ -47,6 +46,7 @@
 		DD91ACE6237E9F0200D3D5A1 /* ContactInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD91ACDF237E9F0200D3D5A1 /* ContactInteractor.swift */; };
 		DD91ACE8237E9F4800D3D5A1 /* ContactViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD91ACE7237E9F4800D3D5A1 /* ContactViewController.xib */; };
 		DD91ACEA237EA0CE00D3D5A1 /* AssetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD91ACE9237EA0CE00D3D5A1 /* AssetViewController.xib */; };
+		DD91ACED23824B3D00D3D5A1 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD91ACEC23824B3D00D3D5A1 /* Utils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,7 +61,6 @@
 		DD91AC9D237E925100D3D5A1 /* RouterCoordinatorLogic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouterCoordinatorLogic.swift; sourceTree = "<group>"; };
 		DD91AC9F237E929100D3D5A1 /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
 		DD91ACA0237E929100D3D5A1 /* HomeTabCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTabCoordinator.swift; sourceTree = "<group>"; };
-		DD91ACA3237E929700D3D5A1 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		DD91ACA7237E92B900D3D5A1 /* LoginRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
 		DD91ACA8237E92B900D3D5A1 /* LoginPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
 		DD91ACA9237E92B900D3D5A1 /* LoginModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginModels.swift; sourceTree = "<group>"; };
@@ -94,6 +93,7 @@
 		DD91ACDF237E9F0200D3D5A1 /* ContactInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactInteractor.swift; sourceTree = "<group>"; };
 		DD91ACE7237E9F4800D3D5A1 /* ContactViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContactViewController.xib; sourceTree = "<group>"; };
 		DD91ACE9237EA0CE00D3D5A1 /* AssetViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AssetViewController.xib; sourceTree = "<group>"; };
+		DD91ACEC23824B3D00D3D5A1 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,8 +146,8 @@
 		DD91AC85237E922000D3D5A1 /* VIPCoordinatorExample */ = {
 			isa = PBXGroup;
 			children = (
+				DD91ACEB23824B1700D3D5A1 /* Utils */,
 				DD91ACA5237E92A400D3D5A1 /* Views */,
-				DD91ACA3237E929700D3D5A1 /* Utils.swift */,
 				DD91AC9C237E924000D3D5A1 /* Coordinators */,
 				DD91AC86237E922000D3D5A1 /* AppDelegate.swift */,
 				DD91AC8F237E922100D3D5A1 /* Assets.xcassets */,
@@ -244,6 +244,14 @@
 				DD91ACE7237E9F4800D3D5A1 /* ContactViewController.xib */,
 			);
 			path = Contact;
+			sourceTree = "<group>";
+		};
+		DD91ACEB23824B1700D3D5A1 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				DD91ACEC23824B3D00D3D5A1 /* Utils.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -372,10 +380,10 @@
 				DD91ACCC237E93FF00D3D5A1 /* AssetPresenter.swift in Sources */,
 				DD91ACAF237E92B900D3D5A1 /* LoginPresenter.swift in Sources */,
 				DD91ACC3237E93EB00D3D5A1 /* HomeAssembly.swift in Sources */,
+				DD91ACED23824B3D00D3D5A1 /* Utils.swift in Sources */,
 				DD91ACCF237E93FF00D3D5A1 /* AssetModels.swift in Sources */,
 				DD91ACE2237E9F0200D3D5A1 /* ContactRouter.swift in Sources */,
 				DD91ACE3237E9F0200D3D5A1 /* ContactModels.swift in Sources */,
-				DD91ACA4237E929700D3D5A1 /* Utils.swift in Sources */,
 				DD91AC87237E922000D3D5A1 /* AppDelegate.swift in Sources */,
 				DD91ACD0237E93FF00D3D5A1 /* AssetViewController.swift in Sources */,
 				DD91AC9E237E925100D3D5A1 /* RouterCoordinatorLogic.swift in Sources */,
