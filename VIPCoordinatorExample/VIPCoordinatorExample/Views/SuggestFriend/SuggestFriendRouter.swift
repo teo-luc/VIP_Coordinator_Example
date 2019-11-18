@@ -19,7 +19,7 @@ protocol SuggestFriendDataPassing {
 }
 
 class SuggestFriendRouter: NSObject, SuggestFriendRoutingLogic, SuggestFriendDataPassing {
-    var coordinator: UnownedRouter<ContactRoute>?    
+    var coordinator: UnownedRouter<ContactRoute>?
     weak var viewController: SuggestFriendViewController?
     var dataStore: SuggestFriendDataStore?
 
