@@ -8,7 +8,7 @@
 
 import UIKit
 
-enum Asset {
+enum Favorites {
     struct Request {}
 
     struct Response {}

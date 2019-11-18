@@ -8,12 +8,12 @@
 
 import UIKit
 
-protocol AssetDisplayLogic: class {
+protocol FavoritesDisplayLogic: class {
 }
 
-class AssetViewController: UIViewController, AssetDisplayLogic {
-    var interactor: AssetBusinessLogic?
-    var router: (NSObjectProtocol & AssetRoutingLogic & AssetDataPassing)?
+class FavoritesViewController: UIViewController, FavoritesDisplayLogic {
+    var interactor: FavoritesBusinessLogic?
+    var router: (NSObjectProtocol & FavoritesRoutingLogic & AssetDataPassing)?
 
     // MARK: Object lifecycle
     deinit {

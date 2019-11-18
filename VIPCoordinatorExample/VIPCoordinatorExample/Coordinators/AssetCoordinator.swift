@@ -24,7 +24,7 @@ class AssetCoordinator: NavigationCoordinator<AssetRoute> {
         let container = AppDelegate.share.container
         switch route {
         case .asset:
-            let vc = AssetAssembly().resolve(container: container, AssetViewController.self)
+            let vc = FavoritesAssembly().resolve(container: container, FavoritesViewController.self)
             return .push(vc)
         case .assetDetail:
             break

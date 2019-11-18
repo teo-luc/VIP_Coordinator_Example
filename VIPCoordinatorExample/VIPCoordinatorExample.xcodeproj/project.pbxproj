@@ -28,13 +28,13 @@
 		DD91ACC2237E93EB00D3D5A1 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD91ACBB237E93EB00D3D5A1 /* HomeViewController.swift */; };
 		DD91ACC3237E93EB00D3D5A1 /* HomeAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD91ACBC237E93EB00D3D5A1 /* HomeAssembly.swift */; };
 		DD91ACC4237E93EB00D3D5A1 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD91ACBD237E93EB00D3D5A1 /* HomeInteractor.swift */; };
-		DD91ACCC237E93FF00D3D5A1 /* AssetPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD91ACC5237E93FF00D3D5A1 /* AssetPresenter.swift */; };
-		DD91ACCD237E93FF00D3D5A1 /* AssetWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD91ACC6237E93FF00D3D5A1 /* AssetWorker.swift */; };
-		DD91ACCE237E93FF00D3D5A1 /* AssetRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD91ACC7237E93FF00D3D5A1 /* AssetRouter.swift */; };
-		DD91ACCF237E93FF00D3D5A1 /* AssetModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD91ACC8237E93FF00D3D5A1 /* AssetModels.swift */; };
-		DD91ACD0237E93FF00D3D5A1 /* AssetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD91ACC9237E93FF00D3D5A1 /* AssetViewController.swift */; };
-		DD91ACD1237E93FF00D3D5A1 /* AssetAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD91ACCA237E93FF00D3D5A1 /* AssetAssembly.swift */; };
-		DD91ACD2237E93FF00D3D5A1 /* AssetInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD91ACCB237E93FF00D3D5A1 /* AssetInteractor.swift */; };
+		DD91ACCC237E93FF00D3D5A1 /* FavoritesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD91ACC5237E93FF00D3D5A1 /* FavoritesPresenter.swift */; };
+		DD91ACCD237E93FF00D3D5A1 /* FavoritesWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD91ACC6237E93FF00D3D5A1 /* FavoritesWorker.swift */; };
+		DD91ACCE237E93FF00D3D5A1 /* FavoritesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD91ACC7237E93FF00D3D5A1 /* FavoritesRouter.swift */; };
+		DD91ACCF237E93FF00D3D5A1 /* FavoritesModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD91ACC8237E93FF00D3D5A1 /* FavoritesModels.swift */; };
+		DD91ACD0237E93FF00D3D5A1 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD91ACC9237E93FF00D3D5A1 /* FavoritesViewController.swift */; };
+		DD91ACD1237E93FF00D3D5A1 /* FavoritesAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD91ACCA237E93FF00D3D5A1 /* FavoritesAssembly.swift */; };
+		DD91ACD2237E93FF00D3D5A1 /* FavoritesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD91ACCB237E93FF00D3D5A1 /* FavoritesInteractor.swift */; };
 		DD91ACD4237E942A00D3D5A1 /* ContactCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD91ACD3237E942A00D3D5A1 /* ContactCoordinator.swift */; };
 		DD91ACD6237E943700D3D5A1 /* AssetCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD91ACD5237E943700D3D5A1 /* AssetCoordinator.swift */; };
 		DD91ACE0237E9F0200D3D5A1 /* ContactPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD91ACD9237E9F0200D3D5A1 /* ContactPresenter.swift */; };
@@ -45,7 +45,7 @@
 		DD91ACE5237E9F0200D3D5A1 /* ContactAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD91ACDE237E9F0200D3D5A1 /* ContactAssembly.swift */; };
 		DD91ACE6237E9F0200D3D5A1 /* ContactInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD91ACDF237E9F0200D3D5A1 /* ContactInteractor.swift */; };
 		DD91ACE8237E9F4800D3D5A1 /* ContactViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD91ACE7237E9F4800D3D5A1 /* ContactViewController.xib */; };
-		DD91ACEA237EA0CE00D3D5A1 /* AssetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD91ACE9237EA0CE00D3D5A1 /* AssetViewController.xib */; };
+		DD91ACEA237EA0CE00D3D5A1 /* FavoritesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD91ACE9237EA0CE00D3D5A1 /* FavoritesViewController.xib */; };
 		DD91ACED23824B3D00D3D5A1 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD91ACEC23824B3D00D3D5A1 /* Utils.swift */; };
 /* End PBXBuildFile section */
 
@@ -75,13 +75,13 @@
 		DD91ACBB237E93EB00D3D5A1 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		DD91ACBC237E93EB00D3D5A1 /* HomeAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeAssembly.swift; sourceTree = "<group>"; };
 		DD91ACBD237E93EB00D3D5A1 /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
-		DD91ACC5237E93FF00D3D5A1 /* AssetPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetPresenter.swift; sourceTree = "<group>"; };
-		DD91ACC6237E93FF00D3D5A1 /* AssetWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetWorker.swift; sourceTree = "<group>"; };
-		DD91ACC7237E93FF00D3D5A1 /* AssetRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetRouter.swift; sourceTree = "<group>"; };
-		DD91ACC8237E93FF00D3D5A1 /* AssetModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetModels.swift; sourceTree = "<group>"; };
-		DD91ACC9237E93FF00D3D5A1 /* AssetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetViewController.swift; sourceTree = "<group>"; };
-		DD91ACCA237E93FF00D3D5A1 /* AssetAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetAssembly.swift; sourceTree = "<group>"; };
-		DD91ACCB237E93FF00D3D5A1 /* AssetInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetInteractor.swift; sourceTree = "<group>"; };
+		DD91ACC5237E93FF00D3D5A1 /* FavoritesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesPresenter.swift; sourceTree = "<group>"; };
+		DD91ACC6237E93FF00D3D5A1 /* FavoritesWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesWorker.swift; sourceTree = "<group>"; };
+		DD91ACC7237E93FF00D3D5A1 /* FavoritesRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesRouter.swift; sourceTree = "<group>"; };
+		DD91ACC8237E93FF00D3D5A1 /* FavoritesModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesModels.swift; sourceTree = "<group>"; };
+		DD91ACC9237E93FF00D3D5A1 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
+		DD91ACCA237E93FF00D3D5A1 /* FavoritesAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesAssembly.swift; sourceTree = "<group>"; };
+		DD91ACCB237E93FF00D3D5A1 /* FavoritesInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesInteractor.swift; sourceTree = "<group>"; };
 		DD91ACD3237E942A00D3D5A1 /* ContactCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactCoordinator.swift; sourceTree = "<group>"; };
 		DD91ACD5237E943700D3D5A1 /* AssetCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetCoordinator.swift; sourceTree = "<group>"; };
 		DD91ACD9237E9F0200D3D5A1 /* ContactPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactPresenter.swift; sourceTree = "<group>"; };
@@ -92,7 +92,7 @@
 		DD91ACDE237E9F0200D3D5A1 /* ContactAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactAssembly.swift; sourceTree = "<group>"; };
 		DD91ACDF237E9F0200D3D5A1 /* ContactInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactInteractor.swift; sourceTree = "<group>"; };
 		DD91ACE7237E9F4800D3D5A1 /* ContactViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContactViewController.xib; sourceTree = "<group>"; };
-		DD91ACE9237EA0CE00D3D5A1 /* AssetViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AssetViewController.xib; sourceTree = "<group>"; };
+		DD91ACE9237EA0CE00D3D5A1 /* FavoritesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoritesViewController.xib; sourceTree = "<group>"; };
 		DD91ACEC23824B3D00D3D5A1 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -211,14 +211,14 @@
 		DD91ACB6237E93D900D3D5A1 /* Asset */ = {
 			isa = PBXGroup;
 			children = (
-				DD91ACC5237E93FF00D3D5A1 /* AssetPresenter.swift */,
-				DD91ACC6237E93FF00D3D5A1 /* AssetWorker.swift */,
-				DD91ACC7237E93FF00D3D5A1 /* AssetRouter.swift */,
-				DD91ACC8237E93FF00D3D5A1 /* AssetModels.swift */,
-				DD91ACC9237E93FF00D3D5A1 /* AssetViewController.swift */,
-				DD91ACCA237E93FF00D3D5A1 /* AssetAssembly.swift */,
-				DD91ACCB237E93FF00D3D5A1 /* AssetInteractor.swift */,
-				DD91ACE9237EA0CE00D3D5A1 /* AssetViewController.xib */,
+				DD91ACC5237E93FF00D3D5A1 /* FavoritesPresenter.swift */,
+				DD91ACC6237E93FF00D3D5A1 /* FavoritesWorker.swift */,
+				DD91ACC7237E93FF00D3D5A1 /* FavoritesRouter.swift */,
+				DD91ACC8237E93FF00D3D5A1 /* FavoritesModels.swift */,
+				DD91ACC9237E93FF00D3D5A1 /* FavoritesViewController.swift */,
+				DD91ACCA237E93FF00D3D5A1 /* FavoritesAssembly.swift */,
+				DD91ACCB237E93FF00D3D5A1 /* FavoritesInteractor.swift */,
+				DD91ACE9237EA0CE00D3D5A1 /* FavoritesViewController.xib */,
 			);
 			path = Asset;
 			sourceTree = "<group>";
@@ -316,7 +316,7 @@
 			files = (
 				DD91ACB4237E92B900D3D5A1 /* LoginViewController.xib in Resources */,
 				DD91ACE8237E9F4800D3D5A1 /* ContactViewController.xib in Resources */,
-				DD91ACEA237EA0CE00D3D5A1 /* AssetViewController.xib in Resources */,
+				DD91ACEA237EA0CE00D3D5A1 /* FavoritesViewController.xib in Resources */,
 				DD91AC93237E922100D3D5A1 /* LaunchScreen.storyboard in Resources */,
 				DD91AC90237E922100D3D5A1 /* Assets.xcassets in Resources */,
 			);
@@ -377,23 +377,23 @@
 				DD91ACB0237E92B900D3D5A1 /* LoginModels.swift in Sources */,
 				DD91ACA2237E929100D3D5A1 /* HomeTabCoordinator.swift in Sources */,
 				DD91ACBE237E93EB00D3D5A1 /* HomePresenter.swift in Sources */,
-				DD91ACCC237E93FF00D3D5A1 /* AssetPresenter.swift in Sources */,
+				DD91ACCC237E93FF00D3D5A1 /* FavoritesPresenter.swift in Sources */,
 				DD91ACAF237E92B900D3D5A1 /* LoginPresenter.swift in Sources */,
 				DD91ACC3237E93EB00D3D5A1 /* HomeAssembly.swift in Sources */,
 				DD91ACED23824B3D00D3D5A1 /* Utils.swift in Sources */,
-				DD91ACCF237E93FF00D3D5A1 /* AssetModels.swift in Sources */,
+				DD91ACCF237E93FF00D3D5A1 /* FavoritesModels.swift in Sources */,
 				DD91ACE2237E9F0200D3D5A1 /* ContactRouter.swift in Sources */,
 				DD91ACE3237E9F0200D3D5A1 /* ContactModels.swift in Sources */,
 				DD91AC87237E922000D3D5A1 /* AppDelegate.swift in Sources */,
-				DD91ACD0237E93FF00D3D5A1 /* AssetViewController.swift in Sources */,
+				DD91ACD0237E93FF00D3D5A1 /* FavoritesViewController.swift in Sources */,
 				DD91AC9E237E925100D3D5A1 /* RouterCoordinatorLogic.swift in Sources */,
 				DD91ACB2237E92B900D3D5A1 /* LoginInteractor.swift in Sources */,
 				DD91ACE6237E9F0200D3D5A1 /* ContactInteractor.swift in Sources */,
-				DD91ACCE237E93FF00D3D5A1 /* AssetRouter.swift in Sources */,
+				DD91ACCE237E93FF00D3D5A1 /* FavoritesRouter.swift in Sources */,
 				DD91ACC0237E93EB00D3D5A1 /* HomeRouter.swift in Sources */,
 				DD91ACC2237E93EB00D3D5A1 /* HomeViewController.swift in Sources */,
 				DD91ACE0237E9F0200D3D5A1 /* ContactPresenter.swift in Sources */,
-				DD91ACD2237E93FF00D3D5A1 /* AssetInteractor.swift in Sources */,
+				DD91ACD2237E93FF00D3D5A1 /* FavoritesInteractor.swift in Sources */,
 				DD91ACE5237E9F0200D3D5A1 /* ContactAssembly.swift in Sources */,
 				DD91ACBF237E93EB00D3D5A1 /* HomeWorker.swift in Sources */,
 				DD91ACAE237E92B900D3D5A1 /* LoginRouter.swift in Sources */,
@@ -402,8 +402,8 @@
 				DD91ACD4237E942A00D3D5A1 /* ContactCoordinator.swift in Sources */,
 				DD91ACD6237E943700D3D5A1 /* AssetCoordinator.swift in Sources */,
 				DD91ACB3237E92B900D3D5A1 /* LoginViewController.swift in Sources */,
-				DD91ACCD237E93FF00D3D5A1 /* AssetWorker.swift in Sources */,
-				DD91ACD1237E93FF00D3D5A1 /* AssetAssembly.swift in Sources */,
+				DD91ACCD237E93FF00D3D5A1 /* FavoritesWorker.swift in Sources */,
+				DD91ACD1237E93FF00D3D5A1 /* FavoritesAssembly.swift in Sources */,
 				DD91ACB1237E92B900D3D5A1 /* LoginAssembly.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

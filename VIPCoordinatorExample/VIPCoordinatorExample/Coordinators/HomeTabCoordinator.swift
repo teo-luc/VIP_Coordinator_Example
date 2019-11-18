@@ -11,20 +11,20 @@ import XCoordinator
 
 enum HomeTabRoute : Route {
     case contact
-    case asset
+    case favorites
 }
 
 class HomeTabCoordinator: TabBarCoordinator<HomeTabRoute> {
     private let contactRouter: StrongRouter<ContactRoute>
-    private let assetRouter: StrongRouter<AssetRoute>
+    private let favoritesRouter: StrongRouter<AssetRoute>
     
     convenience init(userId: Int, firstName: String, lastName: String) {
         let contactRouter = ContactCoordinator(userId : userId,
                                                firstName: firstName,
                                                lastName: lastName)
         let assetRouter   = AssetCoordinator()
-        assetRouter.rootViewController.tabBarItem = UITabBarItem(tabBarSystemItem: .more, tag : 1)
-        contactRouter.viewController.tabBarItem   = UITabBarItem(tabBarSystemItem: .recents, tag   : 0)
+        assetRouter.rootViewController.tabBarItem   = UITabBarItem(tabBarSystemItem: .contacts, tag: 0)
+        contactRouter.rootViewController.tabBarItem = UITabBarItem(tabBarSystemItem: .favorites, tag: 1)
         self.init(contactRouter: contactRouter.strongRouter,
                   assetRouter: assetRouter.strongRouter)
     }
@@ -33,7 +33,7 @@ class HomeTabCoordinator: TabBarCoordinator<HomeTabRoute> {
     
     init(contactRouter: StrongRouter<ContactRoute>, assetRouter: StrongRouter<AssetRoute>) {
         self.contactRouter = contactRouter
-        self.assetRouter = assetRouter
+        self.favoritesRouter = assetRouter
         super.init(tabs: [contactRouter, assetRouter], select: contactRouter)
     }
     
@@ -41,8 +41,8 @@ class HomeTabCoordinator: TabBarCoordinator<HomeTabRoute> {
         switch route {
         case .contact:
             return .select(contactRouter)
-        case .asset:
-            return .select(assetRouter)
+        case .favorites:
+            return .select(favoritesRouter)
         }
     }
 

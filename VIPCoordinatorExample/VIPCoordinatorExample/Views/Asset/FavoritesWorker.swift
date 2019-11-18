@@ -8,5 +8,5 @@
 
 import UIKit
 
-class AssetWorker {
+class FavoritesWorker {
 }
