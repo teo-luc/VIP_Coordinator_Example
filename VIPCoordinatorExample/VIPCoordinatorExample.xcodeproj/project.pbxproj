@@ -1,0 +1,591 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8806A839B4391DF4DA5BF030 /* Pods_VIPCoordinatorExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5F5D825E6AC18E2CD397346 /* Pods_VIPCoordinatorExample.framework */; };
+		DD91AC87237E922000D3D5A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD91AC86237E922000D3D5A1 /* AppDelegate.swift */; };
+		DD91AC90237E922100D3D5A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD91AC8F237E922100D3D5A1 /* Assets.xcassets */; };
+		DD91AC93237E922100D3D5A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD91AC91237E922100D3D5A1 /* LaunchScreen.storyboard */; };
+		DD91AC9E237E925100D3D5A1 /* RouterCoordinatorLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD91AC9D237E925100D3D5A1 /* RouterCoordinatorLogic.swift */; };
+		DD91ACA1237E929100D3D5A1 /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD91AC9F237E929100D3D5A1 /* ApplicationCoordinator.swift */; };
+		DD91ACA2237E929100D3D5A1 /* HomeTabCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD91ACA0237E929100D3D5A1 /* HomeTabCoordinator.swift */; };
+		DD91ACA4237E929700D3D5A1 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD91ACA3237E929700D3D5A1 /* Utils.swift */; };
+		DD91ACAE237E92B900D3D5A1 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD91ACA7237E92B900D3D5A1 /* LoginRouter.swift */; };
+		DD91ACAF237E92B900D3D5A1 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD91ACA8237E92B900D3D5A1 /* LoginPresenter.swift */; };
+		DD91ACB0237E92B900D3D5A1 /* LoginModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD91ACA9237E92B900D3D5A1 /* LoginModels.swift */; };
+		DD91ACB1237E92B900D3D5A1 /* LoginAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD91ACAA237E92B900D3D5A1 /* LoginAssembly.swift */; };
+		DD91ACB2237E92B900D3D5A1 /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD91ACAB237E92B900D3D5A1 /* LoginInteractor.swift */; };
+		DD91ACB3237E92B900D3D5A1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD91ACAC237E92B900D3D5A1 /* LoginViewController.swift */; };
+		DD91ACB4237E92B900D3D5A1 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD91ACAD237E92B900D3D5A1 /* LoginViewController.xib */; };
+		DD91ACBE237E93EB00D3D5A1 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD91ACB7237E93EB00D3D5A1 /* HomePresenter.swift */; };
+		DD91ACBF237E93EB00D3D5A1 /* HomeWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD91ACB8237E93EB00D3D5A1 /* HomeWorker.swift */; };
+		DD91ACC0237E93EB00D3D5A1 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD91ACB9237E93EB00D3D5A1 /* HomeRouter.swift */; };
+		DD91ACC1237E93EB00D3D5A1 /* HomeModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD91ACBA237E93EB00D3D5A1 /* HomeModels.swift */; };
+		DD91ACC2237E93EB00D3D5A1 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD91ACBB237E93EB00D3D5A1 /* HomeViewController.swift */; };
+		DD91ACC3237E93EB00D3D5A1 /* HomeAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD91ACBC237E93EB00D3D5A1 /* HomeAssembly.swift */; };
+		DD91ACC4237E93EB00D3D5A1 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD91ACBD237E93EB00D3D5A1 /* HomeInteractor.swift */; };
+		DD91ACCC237E93FF00D3D5A1 /* AssetPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD91ACC5237E93FF00D3D5A1 /* AssetPresenter.swift */; };
+		DD91ACCD237E93FF00D3D5A1 /* AssetWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD91ACC6237E93FF00D3D5A1 /* AssetWorker.swift */; };
+		DD91ACCE237E93FF00D3D5A1 /* AssetRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD91ACC7237E93FF00D3D5A1 /* AssetRouter.swift */; };
+		DD91ACCF237E93FF00D3D5A1 /* AssetModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD91ACC8237E93FF00D3D5A1 /* AssetModels.swift */; };
+		DD91ACD0237E93FF00D3D5A1 /* AssetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD91ACC9237E93FF00D3D5A1 /* AssetViewController.swift */; };
+		DD91ACD1237E93FF00D3D5A1 /* AssetAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD91ACCA237E93FF00D3D5A1 /* AssetAssembly.swift */; };
+		DD91ACD2237E93FF00D3D5A1 /* AssetInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD91ACCB237E93FF00D3D5A1 /* AssetInteractor.swift */; };
+		DD91ACD4237E942A00D3D5A1 /* ContactCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD91ACD3237E942A00D3D5A1 /* ContactCoordinator.swift */; };
+		DD91ACD6237E943700D3D5A1 /* AssetCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD91ACD5237E943700D3D5A1 /* AssetCoordinator.swift */; };
+		DD91ACE0237E9F0200D3D5A1 /* ContactPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD91ACD9237E9F0200D3D5A1 /* ContactPresenter.swift */; };
+		DD91ACE1237E9F0200D3D5A1 /* ContactWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD91ACDA237E9F0200D3D5A1 /* ContactWorker.swift */; };
+		DD91ACE2237E9F0200D3D5A1 /* ContactRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD91ACDB237E9F0200D3D5A1 /* ContactRouter.swift */; };
+		DD91ACE3237E9F0200D3D5A1 /* ContactModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD91ACDC237E9F0200D3D5A1 /* ContactModels.swift */; };
+		DD91ACE4237E9F0200D3D5A1 /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD91ACDD237E9F0200D3D5A1 /* ContactViewController.swift */; };
+		DD91ACE5237E9F0200D3D5A1 /* ContactAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD91ACDE237E9F0200D3D5A1 /* ContactAssembly.swift */; };
+		DD91ACE6237E9F0200D3D5A1 /* ContactInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD91ACDF237E9F0200D3D5A1 /* ContactInteractor.swift */; };
+		DD91ACE8237E9F4800D3D5A1 /* ContactViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD91ACE7237E9F4800D3D5A1 /* ContactViewController.xib */; };
+		DD91ACEA237EA0CE00D3D5A1 /* AssetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD91ACE9237EA0CE00D3D5A1 /* AssetViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		983DA84E2A790F0ABD328219 /* Pods-VIPCoordinatorExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VIPCoordinatorExample.debug.xcconfig"; path = "Target Support Files/Pods-VIPCoordinatorExample/Pods-VIPCoordinatorExample.debug.xcconfig"; sourceTree = "<group>"; };
+		9D56519AB3885E71335447EE /* Pods-VIPCoordinatorExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VIPCoordinatorExample.release.xcconfig"; path = "Target Support Files/Pods-VIPCoordinatorExample/Pods-VIPCoordinatorExample.release.xcconfig"; sourceTree = "<group>"; };
+		D5F5D825E6AC18E2CD397346 /* Pods_VIPCoordinatorExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VIPCoordinatorExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD91AC83237E922000D3D5A1 /* VIPCoordinatorExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VIPCoordinatorExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD91AC86237E922000D3D5A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DD91AC8F237E922100D3D5A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DD91AC92237E922100D3D5A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DD91AC94237E922100D3D5A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD91AC9D237E925100D3D5A1 /* RouterCoordinatorLogic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouterCoordinatorLogic.swift; sourceTree = "<group>"; };
+		DD91AC9F237E929100D3D5A1 /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
+		DD91ACA0237E929100D3D5A1 /* HomeTabCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTabCoordinator.swift; sourceTree = "<group>"; };
+		DD91ACA3237E929700D3D5A1 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		DD91ACA7237E92B900D3D5A1 /* LoginRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
+		DD91ACA8237E92B900D3D5A1 /* LoginPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		DD91ACA9237E92B900D3D5A1 /* LoginModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginModels.swift; sourceTree = "<group>"; };
+		DD91ACAA237E92B900D3D5A1 /* LoginAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginAssembly.swift; sourceTree = "<group>"; };
+		DD91ACAB237E92B900D3D5A1 /* LoginInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
+		DD91ACAC237E92B900D3D5A1 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		DD91ACAD237E92B900D3D5A1 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		DD91ACB7237E93EB00D3D5A1 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		DD91ACB8237E93EB00D3D5A1 /* HomeWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWorker.swift; sourceTree = "<group>"; };
+		DD91ACB9237E93EB00D3D5A1 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		DD91ACBA237E93EB00D3D5A1 /* HomeModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModels.swift; sourceTree = "<group>"; };
+		DD91ACBB237E93EB00D3D5A1 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		DD91ACBC237E93EB00D3D5A1 /* HomeAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeAssembly.swift; sourceTree = "<group>"; };
+		DD91ACBD237E93EB00D3D5A1 /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
+		DD91ACC5237E93FF00D3D5A1 /* AssetPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetPresenter.swift; sourceTree = "<group>"; };
+		DD91ACC6237E93FF00D3D5A1 /* AssetWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetWorker.swift; sourceTree = "<group>"; };
+		DD91ACC7237E93FF00D3D5A1 /* AssetRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetRouter.swift; sourceTree = "<group>"; };
+		DD91ACC8237E93FF00D3D5A1 /* AssetModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetModels.swift; sourceTree = "<group>"; };
+		DD91ACC9237E93FF00D3D5A1 /* AssetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetViewController.swift; sourceTree = "<group>"; };
+		DD91ACCA237E93FF00D3D5A1 /* AssetAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetAssembly.swift; sourceTree = "<group>"; };
+		DD91ACCB237E93FF00D3D5A1 /* AssetInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetInteractor.swift; sourceTree = "<group>"; };
+		DD91ACD3237E942A00D3D5A1 /* ContactCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactCoordinator.swift; sourceTree = "<group>"; };
+		DD91ACD5237E943700D3D5A1 /* AssetCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetCoordinator.swift; sourceTree = "<group>"; };
+		DD91ACD9237E9F0200D3D5A1 /* ContactPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactPresenter.swift; sourceTree = "<group>"; };
+		DD91ACDA237E9F0200D3D5A1 /* ContactWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactWorker.swift; sourceTree = "<group>"; };
+		DD91ACDB237E9F0200D3D5A1 /* ContactRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactRouter.swift; sourceTree = "<group>"; };
+		DD91ACDC237E9F0200D3D5A1 /* ContactModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactModels.swift; sourceTree = "<group>"; };
+		DD91ACDD237E9F0200D3D5A1 /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
+		DD91ACDE237E9F0200D3D5A1 /* ContactAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactAssembly.swift; sourceTree = "<group>"; };
+		DD91ACDF237E9F0200D3D5A1 /* ContactInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactInteractor.swift; sourceTree = "<group>"; };
+		DD91ACE7237E9F4800D3D5A1 /* ContactViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContactViewController.xib; sourceTree = "<group>"; };
+		DD91ACE9237EA0CE00D3D5A1 /* AssetViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AssetViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DD91AC80237E922000D3D5A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8806A839B4391DF4DA5BF030 /* Pods_VIPCoordinatorExample.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		39BF363B7AA8C0DDE369D6E9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				983DA84E2A790F0ABD328219 /* Pods-VIPCoordinatorExample.debug.xcconfig */,
+				9D56519AB3885E71335447EE /* Pods-VIPCoordinatorExample.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D80AD8370D2CDFCFC6561C20 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D5F5D825E6AC18E2CD397346 /* Pods_VIPCoordinatorExample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DD91AC7A237E922000D3D5A1 = {
+			isa = PBXGroup;
+			children = (
+				DD91AC85237E922000D3D5A1 /* VIPCoordinatorExample */,
+				DD91AC84237E922000D3D5A1 /* Products */,
+				39BF363B7AA8C0DDE369D6E9 /* Pods */,
+				D80AD8370D2CDFCFC6561C20 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DD91AC84237E922000D3D5A1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DD91AC83237E922000D3D5A1 /* VIPCoordinatorExample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DD91AC85237E922000D3D5A1 /* VIPCoordinatorExample */ = {
+			isa = PBXGroup;
+			children = (
+				DD91ACA5237E92A400D3D5A1 /* Views */,
+				DD91ACA3237E929700D3D5A1 /* Utils.swift */,
+				DD91AC9C237E924000D3D5A1 /* Coordinators */,
+				DD91AC86237E922000D3D5A1 /* AppDelegate.swift */,
+				DD91AC8F237E922100D3D5A1 /* Assets.xcassets */,
+				DD91AC91237E922100D3D5A1 /* LaunchScreen.storyboard */,
+				DD91AC94237E922100D3D5A1 /* Info.plist */,
+			);
+			path = VIPCoordinatorExample;
+			sourceTree = "<group>";
+		};
+		DD91AC9C237E924000D3D5A1 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				DD91ACD7237E9CA800D3D5A1 /* Logic */,
+				DD91AC9F237E929100D3D5A1 /* ApplicationCoordinator.swift */,
+				DD91ACA0237E929100D3D5A1 /* HomeTabCoordinator.swift */,
+				DD91ACD3237E942A00D3D5A1 /* ContactCoordinator.swift */,
+				DD91ACD5237E943700D3D5A1 /* AssetCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		DD91ACA5237E92A400D3D5A1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DD91ACD8237E9EE300D3D5A1 /* Contact */,
+				DD91ACB6237E93D900D3D5A1 /* Asset */,
+				DD91ACB5237E93D200D3D5A1 /* Home */,
+				DD91ACA6237E92AD00D3D5A1 /* Login */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DD91ACA6237E92AD00D3D5A1 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				DD91ACAA237E92B900D3D5A1 /* LoginAssembly.swift */,
+				DD91ACAB237E92B900D3D5A1 /* LoginInteractor.swift */,
+				DD91ACA9237E92B900D3D5A1 /* LoginModels.swift */,
+				DD91ACA8237E92B900D3D5A1 /* LoginPresenter.swift */,
+				DD91ACA7237E92B900D3D5A1 /* LoginRouter.swift */,
+				DD91ACAC237E92B900D3D5A1 /* LoginViewController.swift */,
+				DD91ACAD237E92B900D3D5A1 /* LoginViewController.xib */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		DD91ACB5237E93D200D3D5A1 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				DD91ACB7237E93EB00D3D5A1 /* HomePresenter.swift */,
+				DD91ACB8237E93EB00D3D5A1 /* HomeWorker.swift */,
+				DD91ACB9237E93EB00D3D5A1 /* HomeRouter.swift */,
+				DD91ACBA237E93EB00D3D5A1 /* HomeModels.swift */,
+				DD91ACBB237E93EB00D3D5A1 /* HomeViewController.swift */,
+				DD91ACBC237E93EB00D3D5A1 /* HomeAssembly.swift */,
+				DD91ACBD237E93EB00D3D5A1 /* HomeInteractor.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		DD91ACB6237E93D900D3D5A1 /* Asset */ = {
+			isa = PBXGroup;
+			children = (
+				DD91ACC5237E93FF00D3D5A1 /* AssetPresenter.swift */,
+				DD91ACC6237E93FF00D3D5A1 /* AssetWorker.swift */,
+				DD91ACC7237E93FF00D3D5A1 /* AssetRouter.swift */,
+				DD91ACC8237E93FF00D3D5A1 /* AssetModels.swift */,
+				DD91ACC9237E93FF00D3D5A1 /* AssetViewController.swift */,
+				DD91ACCA237E93FF00D3D5A1 /* AssetAssembly.swift */,
+				DD91ACCB237E93FF00D3D5A1 /* AssetInteractor.swift */,
+				DD91ACE9237EA0CE00D3D5A1 /* AssetViewController.xib */,
+			);
+			path = Asset;
+			sourceTree = "<group>";
+		};
+		DD91ACD7237E9CA800D3D5A1 /* Logic */ = {
+			isa = PBXGroup;
+			children = (
+				DD91AC9D237E925100D3D5A1 /* RouterCoordinatorLogic.swift */,
+			);
+			path = Logic;
+			sourceTree = "<group>";
+		};
+		DD91ACD8237E9EE300D3D5A1 /* Contact */ = {
+			isa = PBXGroup;
+			children = (
+				DD91ACD9237E9F0200D3D5A1 /* ContactPresenter.swift */,
+				DD91ACDA237E9F0200D3D5A1 /* ContactWorker.swift */,
+				DD91ACDB237E9F0200D3D5A1 /* ContactRouter.swift */,
+				DD91ACDC237E9F0200D3D5A1 /* ContactModels.swift */,
+				DD91ACDD237E9F0200D3D5A1 /* ContactViewController.swift */,
+				DD91ACDE237E9F0200D3D5A1 /* ContactAssembly.swift */,
+				DD91ACDF237E9F0200D3D5A1 /* ContactInteractor.swift */,
+				DD91ACE7237E9F4800D3D5A1 /* ContactViewController.xib */,
+			);
+			path = Contact;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DD91AC82237E922000D3D5A1 /* VIPCoordinatorExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD91AC97237E922100D3D5A1 /* Build configuration list for PBXNativeTarget "VIPCoordinatorExample" */;
+			buildPhases = (
+				840370F73E59CDE241EDC3B5 /* [CP] Check Pods Manifest.lock */,
+				DD91AC7F237E922000D3D5A1 /* Sources */,
+				DD91AC80237E922000D3D5A1 /* Frameworks */,
+				DD91AC81237E922000D3D5A1 /* Resources */,
+				53BBB15B9411C3815E80BED9 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VIPCoordinatorExample;
+			productName = VIPCoordinatorExample;
+			productReference = DD91AC83237E922000D3D5A1 /* VIPCoordinatorExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DD91AC7B237E922000D3D5A1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1110;
+				LastUpgradeCheck = 1110;
+				ORGANIZATIONNAME = TEQ;
+				TargetAttributes = {
+					DD91AC82237E922000D3D5A1 = {
+						CreatedOnToolsVersion = 11.1;
+					};
+				};
+			};
+			buildConfigurationList = DD91AC7E237E922000D3D5A1 /* Build configuration list for PBXProject "VIPCoordinatorExample" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DD91AC7A237E922000D3D5A1;
+			productRefGroup = DD91AC84237E922000D3D5A1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DD91AC82237E922000D3D5A1 /* VIPCoordinatorExample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DD91AC81237E922000D3D5A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD91ACB4237E92B900D3D5A1 /* LoginViewController.xib in Resources */,
+				DD91ACE8237E9F4800D3D5A1 /* ContactViewController.xib in Resources */,
+				DD91ACEA237EA0CE00D3D5A1 /* AssetViewController.xib in Resources */,
+				DD91AC93237E922100D3D5A1 /* LaunchScreen.storyboard in Resources */,
+				DD91AC90237E922100D3D5A1 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		53BBB15B9411C3815E80BED9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VIPCoordinatorExample/Pods-VIPCoordinatorExample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VIPCoordinatorExample/Pods-VIPCoordinatorExample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VIPCoordinatorExample/Pods-VIPCoordinatorExample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		840370F73E59CDE241EDC3B5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VIPCoordinatorExample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DD91AC7F237E922000D3D5A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD91ACA1237E929100D3D5A1 /* ApplicationCoordinator.swift in Sources */,
+				DD91ACE4237E9F0200D3D5A1 /* ContactViewController.swift in Sources */,
+				DD91ACC1237E93EB00D3D5A1 /* HomeModels.swift in Sources */,
+				DD91ACB0237E92B900D3D5A1 /* LoginModels.swift in Sources */,
+				DD91ACA2237E929100D3D5A1 /* HomeTabCoordinator.swift in Sources */,
+				DD91ACBE237E93EB00D3D5A1 /* HomePresenter.swift in Sources */,
+				DD91ACCC237E93FF00D3D5A1 /* AssetPresenter.swift in Sources */,
+				DD91ACAF237E92B900D3D5A1 /* LoginPresenter.swift in Sources */,
+				DD91ACC3237E93EB00D3D5A1 /* HomeAssembly.swift in Sources */,
+				DD91ACCF237E93FF00D3D5A1 /* AssetModels.swift in Sources */,
+				DD91ACE2237E9F0200D3D5A1 /* ContactRouter.swift in Sources */,
+				DD91ACE3237E9F0200D3D5A1 /* ContactModels.swift in Sources */,
+				DD91ACA4237E929700D3D5A1 /* Utils.swift in Sources */,
+				DD91AC87237E922000D3D5A1 /* AppDelegate.swift in Sources */,
+				DD91ACD0237E93FF00D3D5A1 /* AssetViewController.swift in Sources */,
+				DD91AC9E237E925100D3D5A1 /* RouterCoordinatorLogic.swift in Sources */,
+				DD91ACB2237E92B900D3D5A1 /* LoginInteractor.swift in Sources */,
+				DD91ACE6237E9F0200D3D5A1 /* ContactInteractor.swift in Sources */,
+				DD91ACCE237E93FF00D3D5A1 /* AssetRouter.swift in Sources */,
+				DD91ACC0237E93EB00D3D5A1 /* HomeRouter.swift in Sources */,
+				DD91ACC2237E93EB00D3D5A1 /* HomeViewController.swift in Sources */,
+				DD91ACE0237E9F0200D3D5A1 /* ContactPresenter.swift in Sources */,
+				DD91ACD2237E93FF00D3D5A1 /* AssetInteractor.swift in Sources */,
+				DD91ACE5237E9F0200D3D5A1 /* ContactAssembly.swift in Sources */,
+				DD91ACBF237E93EB00D3D5A1 /* HomeWorker.swift in Sources */,
+				DD91ACAE237E92B900D3D5A1 /* LoginRouter.swift in Sources */,
+				DD91ACE1237E9F0200D3D5A1 /* ContactWorker.swift in Sources */,
+				DD91ACC4237E93EB00D3D5A1 /* HomeInteractor.swift in Sources */,
+				DD91ACD4237E942A00D3D5A1 /* ContactCoordinator.swift in Sources */,
+				DD91ACD6237E943700D3D5A1 /* AssetCoordinator.swift in Sources */,
+				DD91ACB3237E92B900D3D5A1 /* LoginViewController.swift in Sources */,
+				DD91ACCD237E93FF00D3D5A1 /* AssetWorker.swift in Sources */,
+				DD91ACD1237E93FF00D3D5A1 /* AssetAssembly.swift in Sources */,
+				DD91ACB1237E92B900D3D5A1 /* LoginAssembly.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DD91AC91237E922100D3D5A1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DD91AC92237E922100D3D5A1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DD91AC95237E922100D3D5A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DD91AC96237E922100D3D5A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DD91AC98237E922100D3D5A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 983DA84E2A790F0ABD328219 /* Pods-VIPCoordinatorExample.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = VIPCoordinatorExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = demo.VIPCoordinatorExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DD91AC99237E922100D3D5A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D56519AB3885E71335447EE /* Pods-VIPCoordinatorExample.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = VIPCoordinatorExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = demo.VIPCoordinatorExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DD91AC7E237E922000D3D5A1 /* Build configuration list for PBXProject "VIPCoordinatorExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD91AC95237E922100D3D5A1 /* Debug */,
+				DD91AC96237E922100D3D5A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD91AC97237E922100D3D5A1 /* Build configuration list for PBXNativeTarget "VIPCoordinatorExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD91AC98237E922100D3D5A1 /* Debug */,
+				DD91AC99237E922100D3D5A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DD91AC7B237E922000D3D5A1 /* Project object */;
+}

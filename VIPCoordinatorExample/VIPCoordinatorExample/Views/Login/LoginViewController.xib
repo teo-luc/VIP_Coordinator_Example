@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="VIPCoordinatorDemo" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="B6M-L4-5h1" id="1x3-Mj-sai"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="B6M-L4-5h1">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login Screen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F2h-4K-UuB">
+                    <rect key="frame" x="157" y="235" width="100" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cys-9w-G1b">
+                    <rect key="frame" x="157" y="398" width="100" height="44"/>
+                    <color key="backgroundColor" red="0.69801476880000002" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="XUx-xN-cSS"/>
+                        <constraint firstAttribute="width" constant="100" id="gy9-iG-a65"/>
+                    </constraints>
+                    <state key="normal" title="Login"/>
+                    <connections>
+                        <action selector="loginAction:" destination="-1" eventType="touchUpInside" id="6Zb-sP-c5G"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="F2h-4K-UuB" firstAttribute="centerX" secondItem="B6M-L4-5h1" secondAttribute="centerX" id="XnD-bs-cdc"/>
+                <constraint firstItem="F2h-4K-UuB" firstAttribute="top" secondItem="z4S-9Q-fpu" secondAttribute="top" constant="191" id="awU-Fs-KZa"/>
+                <constraint firstItem="Cys-9w-G1b" firstAttribute="centerX" secondItem="B6M-L4-5h1" secondAttribute="centerX" id="t3E-xH-LQC"/>
+                <constraint firstItem="Cys-9w-G1b" firstAttribute="top" secondItem="F2h-4K-UuB" secondAttribute="bottom" constant="142" id="tEQ-vT-Cs4"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="z4S-9Q-fpu"/>
+            <point key="canvasLocation" x="-572" y="-14"/>
+        </view>
+    </objects>
+</document>

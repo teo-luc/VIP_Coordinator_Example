@@ -1,0 +1,22 @@
+PODS:
+  - Swinject (2.7.1)
+  - XCoordinator (2.0.5):
+    - XCoordinator/Core (= 2.0.5)
+  - XCoordinator/Core (2.0.5)
+
+DEPENDENCIES:
+  - Swinject
+  - XCoordinator (~> 2.0)
+
+SPEC REPOS:
+  trunk:
+    - Swinject
+    - XCoordinator
+
+SPEC CHECKSUMS:
+  Swinject: ddf78b8486dd9b71a667b852cad919ab4484478e
+  XCoordinator: 0a0591f1756245d5861fe20660ca680bfac9d027
+
+PODFILE CHECKSUM: b5814d3cf18e821f8a0d7c8126560401dc11c5a1
+
+COCOAPODS: 1.8.3
