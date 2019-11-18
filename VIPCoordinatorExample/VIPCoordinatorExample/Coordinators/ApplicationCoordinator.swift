@@ -10,7 +10,6 @@ import Foundation
 import XCoordinator
 
 enum ApplicationRoute: Route {
-    typealias RawValue = ApplicationRoute
     case login
     case homeTab(StrongRouter<HomeTabRoute>)
 }
