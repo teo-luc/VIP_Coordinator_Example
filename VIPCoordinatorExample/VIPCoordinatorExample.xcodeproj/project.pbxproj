@@ -173,7 +173,7 @@
 			isa = PBXGroup;
 			children = (
 				DD91ACD8237E9EE300D3D5A1 /* Contact */,
-				DD91ACB6237E93D900D3D5A1 /* Asset */,
+				DD91ACB6237E93D900D3D5A1 /* Favorites */,
 				DD91ACB5237E93D200D3D5A1 /* Home */,
 				DD91ACA6237E92AD00D3D5A1 /* Login */,
 			);
@@ -208,7 +208,7 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
-		DD91ACB6237E93D900D3D5A1 /* Asset */ = {
+		DD91ACB6237E93D900D3D5A1 /* Favorites */ = {
 			isa = PBXGroup;
 			children = (
 				DD91ACC5237E93FF00D3D5A1 /* FavoritesPresenter.swift */,
@@ -220,7 +220,7 @@
 				DD91ACCB237E93FF00D3D5A1 /* FavoritesInteractor.swift */,
 				DD91ACE9237EA0CE00D3D5A1 /* FavoritesViewController.xib */,
 			);
-			path = Asset;
+			path = Favorites;
 			sourceTree = "<group>";
 		};
 		DD91ACD7237E9CA800D3D5A1 /* Logic */ = {

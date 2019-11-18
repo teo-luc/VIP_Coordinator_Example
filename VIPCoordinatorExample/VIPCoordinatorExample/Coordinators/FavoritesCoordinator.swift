@@ -27,6 +27,7 @@ class FavoritesCoordinator: NavigationCoordinator<FavoritesRoute> {
             let vc = FavoritesAssembly().resolve(container: container, FavoritesViewController.self)
             return .push(vc)
         case .favoriteDetail:
+            // TODO: Logic here
             break
         }
         return .dismiss()
