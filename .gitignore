@@ -1,0 +1,27 @@
+VIPCoordinatorExample/Pods/Swinject/LICENSE
+VIPCoordinatorExample/Pods/Swinject/README.md
+VIPCoordinatorExample/Pods/Swinject/Sources/_Resolver.swift
+VIPCoordinatorExample/Pods/Swinject/Sources/Assembler.swift
+VIPCoordinatorExample/Pods/Swinject/Sources/Assembly.swift
+VIPCoordinatorExample/Pods/Swinject/Sources/Behavior.swift
+VIPCoordinatorExample/Pods/Swinject/Sources/Container.Arguments.swift
+VIPCoordinatorExample/Pods/Swinject/Sources/Container.Logging.swift
+VIPCoordinatorExample/Pods/Swinject/Sources/Container.swift
+VIPCoordinatorExample/Pods/Swinject/Sources/Container.TypeForwarding.swift
+VIPCoordinatorExample/Pods/Swinject/Sources/DebugHelper.swift
+VIPCoordinatorExample/Pods/Swinject/Sources/FunctionType.swift
+VIPCoordinatorExample/Pods/Swinject/Sources/GraphIdentifier.swift
+VIPCoordinatorExample/Pods/Swinject/Sources/InstanceStorage.swift
+VIPCoordinatorExample/Pods/Swinject/Sources/InstanceWrapper.swift
+VIPCoordinatorExample/Pods/Swinject/Sources/ObjectScope.Standard.swift
+VIPCoordinatorExample/Pods/Swinject/Sources/ObjectScope.swift
+VIPCoordinatorExample/Pods/Swinject/Sources/Resolver.swift
+VIPCoordinatorExample/Pods/Swinject/Sources/ServiceEntry.swift
+VIPCoordinatorExample/Pods/Swinject/Sources/ServiceEntry.TypeForwarding.swift
+VIPCoordinatorExample/Pods/Swinject/Sources/ServiceKey.swift
+VIPCoordinatorExample/Pods/Swinject/Sources/SpinLock.swift
+VIPCoordinatorExample/Pods/Swinject/Sources/Swinject.h
+VIPCoordinatorExample/Pods/Swinject/Sources/SynchronizedResolver.Arguments.swift
+VIPCoordinatorExample/Pods/Swinject/Sources/SynchronizedResolver.swift
+VIPCoordinatorExample/Pods/Swinject/Sources/UnavailableItems.swift
+VIPCoordinatorExample/Pods/Target Support Files/Pods-VIPCoordinatorExample/Pods-VIPCoordinatorExample-acknowledgements.markdown
