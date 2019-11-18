@@ -10,7 +10,7 @@ import UIKit
 
 protocol ContactBusinessLogic {
     var presenter: ContactPresentationLogic? { get set }
-    func showRawMovieDetail(request: ContactRoute)
+    func directDisplayingLogonUser()
 }
 
 protocol ContactDataStore {
@@ -20,10 +20,6 @@ protocol ContactDataStore {
 }
 
 class ContactInteractor: ContactBusinessLogic, ContactDataStore {
-    func showRawMovieDetail(request: ContactRoute) {
-        
-    }
-    
     //
     var userId: Int?
     var firstName: String?
@@ -32,4 +28,15 @@ class ContactInteractor: ContactBusinessLogic, ContactDataStore {
     var presenter: ContactPresentationLogic?
     var worker: ContactWorker?
 
+    
+    //
+    func directDisplayingLogonUser() {
+        var fullName: String
+        if let firstName = firstName, let lastName = lastName {
+            fullName = firstName + " " + lastName
+        } else {
+            fullName = "<#UnknownUser>"
+        }
+        presenter?.presentLogonUser(fullName: fullName)
+    }
 }

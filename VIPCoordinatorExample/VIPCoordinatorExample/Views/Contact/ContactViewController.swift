@@ -9,6 +9,7 @@
 import UIKit
 
 protocol ContactDisplayLogic: class {
+    func displayingLogonUser(fullName: String)
 }
 
 class ContactViewController: UIViewController, ContactDisplayLogic {
@@ -29,6 +30,11 @@ class ContactViewController: UIViewController, ContactDisplayLogic {
         setupOnDidLoad()
         runTaskOnDidLoad()
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        directDisplayingLogonUser()
+    }
 
     // MARK: Setup
     func setupOnDidLoad() {
@@ -37,4 +43,15 @@ class ContactViewController: UIViewController, ContactDisplayLogic {
     // MARK: Do something
     func runTaskOnDidLoad() {
     }
+    
+    // MARK: - Displaying Login User Logic
+    func directDisplayingLogonUser() {
+        self.interactor?.directDisplayingLogonUser()
+    }
+    
+    func displayingLogonUser(fullName: String) {
+        textLabel.text = "Hello \(fullName)!"
+    }
+    
+    // MARK: -
 }
