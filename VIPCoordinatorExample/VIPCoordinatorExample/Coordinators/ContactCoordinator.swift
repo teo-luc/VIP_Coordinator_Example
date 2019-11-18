@@ -51,7 +51,9 @@ class ContactCoordinator: NavigationCoordinator<ContactRoute> {
             dataStore?.lastName  = lastName
             return .push(vc)
         case .logout:
-            return .multiple(/*.popToRoot(), */ .dismiss(animation: nil))
+            return .multiple(
+                /*.popToRoot(), */
+                .dismiss(animation: nil))
         }
     }
 }
