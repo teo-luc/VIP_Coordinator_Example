@@ -58,6 +58,14 @@
 		DD91AD03238271C100D3D5A1 /* SuggestFriendAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD91ACFC238271C100D3D5A1 /* SuggestFriendAssembly.swift */; };
 		DD91AD04238271C100D3D5A1 /* SuggestFriendInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD91ACFD238271C100D3D5A1 /* SuggestFriendInteractor.swift */; };
 		DD91AD06238271D600D3D5A1 /* SuggestFriendViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD91AD05238271D600D3D5A1 /* SuggestFriendViewController.xib */; };
+		DD91AD0F23829A0D00D3D5A1 /* PagePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD91AD0823829A0D00D3D5A1 /* PagePresenter.swift */; };
+		DD91AD1023829A0D00D3D5A1 /* PageWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD91AD0923829A0D00D3D5A1 /* PageWorker.swift */; };
+		DD91AD1123829A0D00D3D5A1 /* PageRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD91AD0A23829A0D00D3D5A1 /* PageRouter.swift */; };
+		DD91AD1223829A0D00D3D5A1 /* PageModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD91AD0B23829A0D00D3D5A1 /* PageModels.swift */; };
+		DD91AD1323829A0D00D3D5A1 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD91AD0C23829A0D00D3D5A1 /* PageViewController.swift */; };
+		DD91AD1423829A0D00D3D5A1 /* PageAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD91AD0D23829A0D00D3D5A1 /* PageAssembly.swift */; };
+		DD91AD1523829A0D00D3D5A1 /* PageInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD91AD0E23829A0D00D3D5A1 /* PageInteractor.swift */; };
+		DD91AD1723829A1E00D3D5A1 /* PageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD91AD1623829A1E00D3D5A1 /* PageViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -116,6 +124,14 @@
 		DD91ACFC238271C100D3D5A1 /* SuggestFriendAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestFriendAssembly.swift; sourceTree = "<group>"; };
 		DD91ACFD238271C100D3D5A1 /* SuggestFriendInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestFriendInteractor.swift; sourceTree = "<group>"; };
 		DD91AD05238271D600D3D5A1 /* SuggestFriendViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SuggestFriendViewController.xib; sourceTree = "<group>"; };
+		DD91AD0823829A0D00D3D5A1 /* PagePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagePresenter.swift; sourceTree = "<group>"; };
+		DD91AD0923829A0D00D3D5A1 /* PageWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageWorker.swift; sourceTree = "<group>"; };
+		DD91AD0A23829A0D00D3D5A1 /* PageRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageRouter.swift; sourceTree = "<group>"; };
+		DD91AD0B23829A0D00D3D5A1 /* PageModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageModels.swift; sourceTree = "<group>"; };
+		DD91AD0C23829A0D00D3D5A1 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		DD91AD0D23829A0D00D3D5A1 /* PageAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageAssembly.swift; sourceTree = "<group>"; };
+		DD91AD0E23829A0D00D3D5A1 /* PageInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageInteractor.swift; sourceTree = "<group>"; };
+		DD91AD1623829A1E00D3D5A1 /* PageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PageViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,6 +210,7 @@
 		DD91ACA5237E92A400D3D5A1 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				DD91AD1823829AC800D3D5A1 /* PageView */,
 				DD91ACF6238271A100D3D5A1 /* SuggestFriend */,
 				DD91ACD8237E9EE300D3D5A1 /* Contact */,
 				DD91ACB6237E93D900D3D5A1 /* Favorites */,
@@ -311,6 +328,29 @@
 			path = SuggestFriend;
 			sourceTree = "<group>";
 		};
+		DD91AD07238299D200D3D5A1 /* Item */ = {
+			isa = PBXGroup;
+			children = (
+				DD91AD0823829A0D00D3D5A1 /* PagePresenter.swift */,
+				DD91AD0923829A0D00D3D5A1 /* PageWorker.swift */,
+				DD91AD0A23829A0D00D3D5A1 /* PageRouter.swift */,
+				DD91AD0B23829A0D00D3D5A1 /* PageModels.swift */,
+				DD91AD0C23829A0D00D3D5A1 /* PageViewController.swift */,
+				DD91AD0D23829A0D00D3D5A1 /* PageAssembly.swift */,
+				DD91AD0E23829A0D00D3D5A1 /* PageInteractor.swift */,
+				DD91AD1623829A1E00D3D5A1 /* PageViewController.xib */,
+			);
+			path = Item;
+			sourceTree = "<group>";
+		};
+		DD91AD1823829AC800D3D5A1 /* PageView */ = {
+			isa = PBXGroup;
+			children = (
+				DD91AD07238299D200D3D5A1 /* Item */,
+			);
+			path = PageView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -374,6 +414,7 @@
 				DD91ACB4237E92B900D3D5A1 /* LoginViewController.xib in Resources */,
 				DD91AD06238271D600D3D5A1 /* SuggestFriendViewController.xib in Resources */,
 				DD91ACE8237E9F4800D3D5A1 /* ContactViewController.xib in Resources */,
+				DD91AD1723829A1E00D3D5A1 /* PageViewController.xib in Resources */,
 				DD91ACF223825A1100D3D5A1 /* FriendViewCell.xib in Resources */,
 				DD91ACEA237EA0CE00D3D5A1 /* FavoritesViewController.xib in Resources */,
 				DD91AC93237E922100D3D5A1 /* LaunchScreen.storyboard in Resources */,
@@ -445,22 +486,27 @@
 				DD91ACCF237E93FF00D3D5A1 /* FavoritesModels.swift in Sources */,
 				DD91ACE2237E9F0200D3D5A1 /* ContactRouter.swift in Sources */,
 				DD91ACE3237E9F0200D3D5A1 /* ContactModels.swift in Sources */,
+				DD91AD1323829A0D00D3D5A1 /* PageViewController.swift in Sources */,
 				DD91AC87237E922000D3D5A1 /* AppDelegate.swift in Sources */,
 				DD91ACD0237E93FF00D3D5A1 /* FavoritesViewController.swift in Sources */,
+				DD91AD1423829A0D00D3D5A1 /* PageAssembly.swift in Sources */,
 				DD91AC9E237E925100D3D5A1 /* RouterCoordinatorLogic.swift in Sources */,
 				DD91AD03238271C100D3D5A1 /* SuggestFriendAssembly.swift in Sources */,
 				DD91AD01238271C100D3D5A1 /* SuggestFriendModels.swift in Sources */,
+				DD91AD1023829A0D00D3D5A1 /* PageWorker.swift in Sources */,
 				DD91ACB2237E92B900D3D5A1 /* LoginInteractor.swift in Sources */,
 				DD91ACE6237E9F0200D3D5A1 /* ContactInteractor.swift in Sources */,
 				DD91AD04238271C100D3D5A1 /* SuggestFriendInteractor.swift in Sources */,
 				DD91ACCE237E93FF00D3D5A1 /* FavoritesRouter.swift in Sources */,
 				DD91ACC0237E93EB00D3D5A1 /* HomeRouter.swift in Sources */,
 				DD91ACC2237E93EB00D3D5A1 /* HomeViewController.swift in Sources */,
+				DD91AD1523829A0D00D3D5A1 /* PageInteractor.swift in Sources */,
 				DD91ACE0237E9F0200D3D5A1 /* ContactPresenter.swift in Sources */,
 				DD91AD02238271C100D3D5A1 /* SuggestFriendViewController.swift in Sources */,
 				DD91ACF023825A0200D3D5A1 /* FriendViewCell.swift in Sources */,
 				DD91ACFE238271C100D3D5A1 /* SuggestFriendPresenter.swift in Sources */,
 				DD91ACD2237E93FF00D3D5A1 /* FavoritesInteractor.swift in Sources */,
+				DD91AD0F23829A0D00D3D5A1 /* PagePresenter.swift in Sources */,
 				DD91ACFF238271C100D3D5A1 /* SuggestFriendWorker.swift in Sources */,
 				DD91ACE5237E9F0200D3D5A1 /* ContactAssembly.swift in Sources */,
 				DD91ACBF237E93EB00D3D5A1 /* HomeWorker.swift in Sources */,
@@ -469,10 +515,12 @@
 				DD91ACC4237E93EB00D3D5A1 /* HomeInteractor.swift in Sources */,
 				DD91ACD4237E942A00D3D5A1 /* ContactCoordinator.swift in Sources */,
 				DD91ACD6237E943700D3D5A1 /* FavoritesCoordinator.swift in Sources */,
+				DD91AD1123829A0D00D3D5A1 /* PageRouter.swift in Sources */,
 				DD91ACB3237E92B900D3D5A1 /* LoginViewController.swift in Sources */,
 				DD91ACCD237E93FF00D3D5A1 /* FavoritesWorker.swift in Sources */,
 				DD91ACD1237E93FF00D3D5A1 /* FavoritesAssembly.swift in Sources */,
 				DD91ACB1237E92B900D3D5A1 /* LoginAssembly.swift in Sources */,
+				DD91AD1223829A0D00D3D5A1 /* PageModels.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

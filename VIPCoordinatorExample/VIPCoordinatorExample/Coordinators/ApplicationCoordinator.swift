@@ -27,6 +27,8 @@ class AppCoordinator: NavigationCoordinator<ApplicationRoute> {
             vc.router?.coordinator = unownedRouter
             return .push(vc)
         case .homeTab(let homeTab):
+            let window = AppDelegate.share.window!
+            homeTab.setRoot(for: window)
             homeTab.viewController?.modalPresentationStyle = .fullScreen
             return .present(homeTab)
         }
