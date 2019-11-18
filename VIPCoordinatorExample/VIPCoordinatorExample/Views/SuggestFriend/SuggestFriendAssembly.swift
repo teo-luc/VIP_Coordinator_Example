@@ -34,6 +34,7 @@ class SuggestFriendAssembly: Assembly {
                 var interactor = resolver.resolve((SuggestFriendBusinessLogic & SuggestFriendDataStore).self)
                 var presenter = resolver.resolve(SuggestFriendPresentationLogic.self)
                 var router = resolver.resolve((NSObjectProtocol & SuggestFriendRoutingLogic & SuggestFriendDataPassing).self)
+                viewController.title = "Suggestion"
                 viewController.interactor = interactor
                 viewController.router = router
                 interactor?.presenter = presenter

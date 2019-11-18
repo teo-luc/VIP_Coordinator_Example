@@ -12,6 +12,7 @@ import XCoordinator
 protocol SuggestFriendRoutingLogic {
     var viewController: SuggestFriendViewController? { get set }
     var coordinator: UnownedRouter<ContactRoute>? { get set }
+    func logout()
 }
 
 protocol SuggestFriendDataPassing {
@@ -24,4 +25,8 @@ class SuggestFriendRouter: NSObject, SuggestFriendRoutingLogic, SuggestFriendDat
     var dataStore: SuggestFriendDataStore?
 
     // MARK: Routing
+    //
+    func logout() {
+        coordinator?.trigger(.logout)
+    }
 }

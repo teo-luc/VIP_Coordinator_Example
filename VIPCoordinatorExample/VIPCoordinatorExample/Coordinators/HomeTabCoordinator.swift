@@ -45,5 +45,4 @@ class HomeTabCoordinator: TabBarCoordinator<HomeTabRoute> {
             return .select(favoritesRouter)
         }
     }
-
 }

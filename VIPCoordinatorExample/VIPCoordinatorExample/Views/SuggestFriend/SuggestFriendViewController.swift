@@ -33,10 +33,24 @@ class SuggestFriendViewController: UIViewController, SuggestFriendDisplayLogic {
 
     // MARK: Setup
     func setupOnDidLoad() {
+        // Adding right button
+        let rightButton = UIButton(type: .custom)
+        rightButton.setTitle("Logout!", for: .normal)
+        rightButton.addTarget(self, action: #selector(directLogout), for: .touchUpInside)
+        //
+        let rightBarButtonItem            = UIBarButtonItem(customView : rightButton)
+        rightButton.layer.backgroundColor = UIColor.red.cgColor
+        rightButton.layer.borderColor     = UIColor.black.cgColor
+        navigationItem.setRightBarButton(rightBarButtonItem, animated: true)
     }
 
     // MARK: Do something
     func runTaskOnDidLoad() {
+    }
+    
+    // MARK: - Logout
+    @objc func directLogout() {
+        self.router?.logout()
     }
     
     // MARK: - Display Suggest Friend

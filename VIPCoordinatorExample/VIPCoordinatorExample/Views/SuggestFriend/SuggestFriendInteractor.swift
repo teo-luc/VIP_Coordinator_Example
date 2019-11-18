@@ -25,7 +25,9 @@ class SuggestFriendInteractor: SuggestFriendBusinessLogic, SuggestFriendDataStor
     //
     var presenter: SuggestFriendPresentationLogic?
     var worker: SuggestFriendWorker?
+    //
     func directDisplayingSuggestFriend() {
         self.presenter?.presentDisplayingSuggestFriend(firstName: firstName ?? "#unknownFirstName", lastName: lastName ?? "#unknownLastName")
     }
+    //
 }

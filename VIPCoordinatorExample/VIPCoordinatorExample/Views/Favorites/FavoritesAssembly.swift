@@ -34,6 +34,7 @@ class FavoritesAssembly: Assembly {
                 var interactor = resolver.resolve((FavoritesBusinessLogic & FavoritesDataStore).self)
                 var presenter = resolver.resolve(FavoritesPresentationLogic.self)
                 var router = resolver.resolve((NSObjectProtocol & FavoritesRoutingLogic & AssetDataPassing).self)
+                viewController.title = "Favorites"
                 viewController.interactor = interactor
                 viewController.router = router
                 interactor?.presenter = presenter

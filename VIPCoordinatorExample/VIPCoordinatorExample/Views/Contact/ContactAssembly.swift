@@ -34,6 +34,7 @@ class ContactAssembly: Assembly {
                 var interactor = resolver.resolve((ContactBusinessLogic & ContactDataStore).self)
                 var presenter = resolver.resolve(ContactPresentationLogic.self)
                 var router = resolver.resolve((NSObjectProtocol & ContactRoutingLogic & ContactDataPassing).self)
+                viewController.title = "Contact"
                 viewController.interactor = interactor
                 viewController.router = router
                 interactor?.presenter = presenter

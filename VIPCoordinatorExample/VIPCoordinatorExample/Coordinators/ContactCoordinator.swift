@@ -12,6 +12,7 @@ import XCoordinator
 enum ContactRoute: Route {
     case contact
     case suggestFriend(lastName: String, firstName: String)
+    case logout
 }
 
 class ContactCoordinator: NavigationCoordinator<ContactRoute> {
@@ -49,6 +50,8 @@ class ContactCoordinator: NavigationCoordinator<ContactRoute> {
             dataStore?.firstName = firstName
             dataStore?.lastName  = lastName
             return .push(vc)
+        case .logout:
+            return .multiple(/*.popToRoot(), */ .dismiss(animation: nil))
         }
     }
 }

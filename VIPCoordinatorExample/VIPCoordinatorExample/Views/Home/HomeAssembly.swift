@@ -34,6 +34,7 @@ class HomeAssembly: Assembly {
                 var interactor = resolver.resolve((HomeBusinessLogic & HomeDataStore).self)
                 var presenter = resolver.resolve(HomePresentationLogic.self)
                 var router = resolver.resolve((NSObjectProtocol & HomeRoutingLogic & HomeDataPassing).self)
+                viewController.title = "Home"
                 viewController.interactor = interactor
                 viewController.router = router
                 interactor?.presenter = presenter

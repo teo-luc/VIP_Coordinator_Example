@@ -35,6 +35,7 @@ class LoginAssembly: Assembly {
                 var interactor = resolver.resolve((LoginBusinessLogic & LoginDataStore).self)
                 var presenter = resolver.resolve(LoginPresentationLogic.self)
                 var router = resolver.resolve((NSObjectProtocol & LoginRoutingLogic & LoginDataPassing).self)
+                viewController.title = "Login"
                 viewController.interactor = interactor
                 viewController.router = router
                 interactor?.presenter = presenter
