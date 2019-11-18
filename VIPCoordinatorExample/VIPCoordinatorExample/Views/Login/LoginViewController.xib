@@ -7,8 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="VIPCoordinatorDemo" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="VIPCoordinatorExample" customModuleProvider="target">
             <connections>
+                <outlet property="firstName" destination="vGD-eT-Izj" id="dWb-D7-Kcl"/>
+                <outlet property="lastName" destination="JPv-oy-QQ3" id="dTl-QZ-0fK"/>
                 <outlet property="view" destination="B6M-L4-5h1" id="1x3-Mj-sai"/>
             </connections>
         </placeholder>
@@ -17,14 +19,8 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login Screen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F2h-4K-UuB">
-                    <rect key="frame" x="157" y="235" width="100" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cys-9w-G1b">
-                    <rect key="frame" x="157" y="398" width="100" height="44"/>
+                    <rect key="frame" x="157" y="182" width="100" height="44"/>
                     <color key="backgroundColor" red="0.69801476880000002" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="44" id="XUx-xN-cSS"/>
@@ -35,13 +31,27 @@
                         <action selector="loginAction:" destination="-1" eventType="touchUpInside" id="6Zb-sP-c5G"/>
                     </connections>
                 </button>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="John" borderStyle="roundedRect" placeholder="First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vGD-eT-Izj">
+                    <rect key="frame" x="10" y="64" width="394" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Wick" borderStyle="roundedRect" placeholder="Last Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JPv-oy-QQ3">
+                    <rect key="frame" x="10" y="108" width="394" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
             </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
             <constraints>
-                <constraint firstItem="F2h-4K-UuB" firstAttribute="centerX" secondItem="B6M-L4-5h1" secondAttribute="centerX" id="XnD-bs-cdc"/>
-                <constraint firstItem="F2h-4K-UuB" firstAttribute="top" secondItem="z4S-9Q-fpu" secondAttribute="top" constant="191" id="awU-Fs-KZa"/>
+                <constraint firstItem="JPv-oy-QQ3" firstAttribute="leading" secondItem="vGD-eT-Izj" secondAttribute="leading" id="1N7-gW-fU1"/>
+                <constraint firstItem="JPv-oy-QQ3" firstAttribute="top" secondItem="vGD-eT-Izj" secondAttribute="bottom" constant="10" id="1Py-nq-Tdm"/>
+                <constraint firstItem="JPv-oy-QQ3" firstAttribute="trailing" secondItem="vGD-eT-Izj" secondAttribute="trailing" id="ADh-MD-Jtd"/>
+                <constraint firstItem="Cys-9w-G1b" firstAttribute="top" secondItem="JPv-oy-QQ3" secondAttribute="bottom" constant="40" id="G9V-Ix-Px9"/>
+                <constraint firstItem="vGD-eT-Izj" firstAttribute="top" secondItem="z4S-9Q-fpu" secondAttribute="top" constant="20" id="MfK-y5-3i8"/>
+                <constraint firstItem="z4S-9Q-fpu" firstAttribute="trailing" secondItem="vGD-eT-Izj" secondAttribute="trailing" constant="10" id="T9k-Wr-yXG"/>
+                <constraint firstItem="vGD-eT-Izj" firstAttribute="leading" secondItem="z4S-9Q-fpu" secondAttribute="leading" constant="10" id="o9q-Qg-P9A"/>
                 <constraint firstItem="Cys-9w-G1b" firstAttribute="centerX" secondItem="B6M-L4-5h1" secondAttribute="centerX" id="t3E-xH-LQC"/>
-                <constraint firstItem="Cys-9w-G1b" firstAttribute="top" secondItem="F2h-4K-UuB" secondAttribute="bottom" constant="142" id="tEQ-vT-Cs4"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="z4S-9Q-fpu"/>
             <point key="canvasLocation" x="-572" y="-14"/>

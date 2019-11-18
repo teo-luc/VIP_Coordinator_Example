@@ -11,6 +11,7 @@ import UIKit
 protocol ContactPresentationLogic {
     var viewController: ContactDisplayLogic? { get set }
     func presentLogonUser(fullName: String)
+    func presentSuggestFriends(friends: [(String, String)])
 }
 
 class ContactPresenter: ContactPresentationLogic {
@@ -18,6 +19,16 @@ class ContactPresenter: ContactPresentationLogic {
 
     // MARK: Do something
     func presentLogonUser(fullName: String) {
+        //
+        // TODO: Some stuff here!
+        //
         viewController?.displayingLogonUser(fullName: fullName)
+    }
+    
+    func presentSuggestFriends(friends: [(String, String)]) {
+        //
+        // TODO: Some stuff here!
+        //
+        viewController?.displayingDisplayingSuggestFriends(suggestFriends: friends)
     }
 }

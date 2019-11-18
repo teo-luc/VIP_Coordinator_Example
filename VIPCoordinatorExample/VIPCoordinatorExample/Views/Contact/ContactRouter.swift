@@ -12,6 +12,7 @@ import XCoordinator
 protocol ContactRoutingLogic {
     var coordinator: UnownedRouter<ContactRoute>? { get set }
     var viewController: ContactViewController? { get set }
+    func displaySuggestFriend(firstName: String, lastName: String)
 }
 
 protocol ContactDataPassing {
@@ -24,4 +25,7 @@ class ContactRouter: NSObject, ContactRoutingLogic, ContactDataPassing {
     var dataStore: ContactDataStore?
 
     // MARK: Routing
+    func displaySuggestFriend(firstName: String, lastName: String) {
+        coordinator?.trigger(.suggestFriend(lastName: firstName, firstName: lastName))
+    }
 }

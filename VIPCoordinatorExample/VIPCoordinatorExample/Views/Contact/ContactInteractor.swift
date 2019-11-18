@@ -11,6 +11,7 @@ import UIKit
 protocol ContactBusinessLogic {
     var presenter: ContactPresentationLogic? { get set }
     func directDisplayingLogonUser()
+    func directDisplayingSuggestFriends()
 }
 
 protocol ContactDataStore {
@@ -38,5 +39,10 @@ class ContactInteractor: ContactBusinessLogic, ContactDataStore {
             fullName = "<#UnknownUser>"
         }
         presenter?.presentLogonUser(fullName: fullName)
+    }
+    
+    func directDisplayingSuggestFriends() {
+        let friends = suggestFriendsProvider
+        presenter?.presentSuggestFriends(friends: friends)
     }
 }

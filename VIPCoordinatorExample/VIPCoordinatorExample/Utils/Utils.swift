@@ -31,7 +31,7 @@ extension Reusable {
 }
 
 // MARK: --
-
+extension UITableViewCell: Reusable {}
 extension UIViewController: Reusable {}
 protocol Nib {}
 extension Nib {

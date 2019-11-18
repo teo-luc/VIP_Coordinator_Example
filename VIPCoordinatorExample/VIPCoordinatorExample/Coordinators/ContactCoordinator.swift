@@ -11,7 +11,7 @@ import XCoordinator
 
 enum ContactRoute: Route {
     case contact
-    case contactDetail
+    case suggestFriend(lastName: String, firstName: String)
 }
 
 class ContactCoordinator: NavigationCoordinator<ContactRoute> {
@@ -39,10 +39,16 @@ class ContactCoordinator: NavigationCoordinator<ContactRoute> {
             dataStore?.lastName  = lastName
             //
             return .push(vc)
-        case .contactDetail:
-            // TODO: Logic here
-            break
+        case .suggestFriend(let firstName, let lastName):
+            //
+            let vc = SuggestFriendAssembly().resolve(container: container, SuggestFriendViewController.self)
+            //
+            vc.router?.coordinator = unownedRouter
+            //
+            var dataStore        = vc.router?.dataStore
+            dataStore?.firstName = firstName
+            dataStore?.lastName  = lastName
+            return .push(vc)
         }
-        return .dismiss()
     }
 }

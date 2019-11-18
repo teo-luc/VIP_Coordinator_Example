@@ -9,6 +9,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ContactViewController" customModule="VIPCoordinatorExample" customModuleProvider="target">
             <connections>
+                <outlet property="tableView" destination="Hzs-EN-hrd" id="4fN-8q-CSK"/>
                 <outlet property="textLabel" destination="DKb-vp-u5b" id="ofe-pT-JO9"/>
                 <outlet property="view" destination="dgZ-Rn-s19" id="LpK-Vi-jKE"/>
             </connections>
@@ -19,20 +20,36 @@
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DKb-vp-u5b">
-                    <rect key="frame" x="0.0" y="84" width="414" height="20.5"/>
+                    <rect key="frame" x="0.0" y="64" width="414" height="20.5"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Hzs-EN-hrd">
+                    <rect key="frame" x="20" y="144.5" width="374" height="697.5"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                </tableView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Suggest Friends:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7xx-HF-NZU">
+                    <rect key="frame" x="20" y="115" width="133" height="21"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
             </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
             <constraints>
+                <constraint firstItem="ohX-Ry-1vb" firstAttribute="bottom" secondItem="Hzs-EN-hrd" secondAttribute="bottom" constant="20" id="0JR-2E-dK3"/>
+                <constraint firstItem="Hzs-EN-hrd" firstAttribute="top" secondItem="DKb-vp-u5b" secondAttribute="bottom" constant="60" id="8b2-ml-X7c"/>
+                <constraint firstItem="Hzs-EN-hrd" firstAttribute="leading" secondItem="ohX-Ry-1vb" secondAttribute="leading" constant="20" id="IiK-ue-iLn"/>
+                <constraint firstItem="Hzs-EN-hrd" firstAttribute="leading" secondItem="7xx-HF-NZU" secondAttribute="leading" id="J32-S8-sHH"/>
                 <constraint firstItem="ohX-Ry-1vb" firstAttribute="trailing" secondItem="DKb-vp-u5b" secondAttribute="trailing" id="LVO-y2-maX"/>
-                <constraint firstItem="DKb-vp-u5b" firstAttribute="top" secondItem="ohX-Ry-1vb" secondAttribute="top" constant="40" id="QRi-fy-Yse"/>
+                <constraint firstItem="DKb-vp-u5b" firstAttribute="top" secondItem="ohX-Ry-1vb" secondAttribute="top" constant="20" id="QRi-fy-Yse"/>
+                <constraint firstItem="ohX-Ry-1vb" firstAttribute="trailing" secondItem="Hzs-EN-hrd" secondAttribute="trailing" constant="20" id="nrw-NA-xqp"/>
                 <constraint firstItem="DKb-vp-u5b" firstAttribute="leading" secondItem="ohX-Ry-1vb" secondAttribute="leading" id="sjL-Qn-xK2"/>
+                <constraint firstItem="Hzs-EN-hrd" firstAttribute="top" secondItem="7xx-HF-NZU" secondAttribute="bottom" constant="8.5" id="t9e-fo-fWg"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="ohX-Ry-1vb"/>
-            <point key="canvasLocation" x="164" y="-27"/>
+            <point key="canvasLocation" x="163.768115942029" y="-27.455357142857142"/>
         </view>
     </objects>
 </document>

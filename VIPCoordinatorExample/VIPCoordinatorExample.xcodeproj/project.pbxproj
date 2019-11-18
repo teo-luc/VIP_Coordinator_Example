@@ -47,6 +47,17 @@
 		DD91ACE8237E9F4800D3D5A1 /* ContactViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD91ACE7237E9F4800D3D5A1 /* ContactViewController.xib */; };
 		DD91ACEA237EA0CE00D3D5A1 /* FavoritesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD91ACE9237EA0CE00D3D5A1 /* FavoritesViewController.xib */; };
 		DD91ACED23824B3D00D3D5A1 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD91ACEC23824B3D00D3D5A1 /* Utils.swift */; };
+		DD91ACF023825A0200D3D5A1 /* FriendViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD91ACEF23825A0200D3D5A1 /* FriendViewCell.swift */; };
+		DD91ACF223825A1100D3D5A1 /* FriendViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD91ACF123825A1100D3D5A1 /* FriendViewCell.xib */; };
+		DD91ACF523825B2800D3D5A1 /* SuggestFriendsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD91ACF423825B2800D3D5A1 /* SuggestFriendsProvider.swift */; };
+		DD91ACFE238271C100D3D5A1 /* SuggestFriendPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD91ACF7238271C100D3D5A1 /* SuggestFriendPresenter.swift */; };
+		DD91ACFF238271C100D3D5A1 /* SuggestFriendWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD91ACF8238271C100D3D5A1 /* SuggestFriendWorker.swift */; };
+		DD91AD00238271C100D3D5A1 /* SuggestFriendRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD91ACF9238271C100D3D5A1 /* SuggestFriendRouter.swift */; };
+		DD91AD01238271C100D3D5A1 /* SuggestFriendModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD91ACFA238271C100D3D5A1 /* SuggestFriendModels.swift */; };
+		DD91AD02238271C100D3D5A1 /* SuggestFriendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD91ACFB238271C100D3D5A1 /* SuggestFriendViewController.swift */; };
+		DD91AD03238271C100D3D5A1 /* SuggestFriendAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD91ACFC238271C100D3D5A1 /* SuggestFriendAssembly.swift */; };
+		DD91AD04238271C100D3D5A1 /* SuggestFriendInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD91ACFD238271C100D3D5A1 /* SuggestFriendInteractor.swift */; };
+		DD91AD06238271D600D3D5A1 /* SuggestFriendViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD91AD05238271D600D3D5A1 /* SuggestFriendViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -94,6 +105,17 @@
 		DD91ACE7237E9F4800D3D5A1 /* ContactViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContactViewController.xib; sourceTree = "<group>"; };
 		DD91ACE9237EA0CE00D3D5A1 /* FavoritesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoritesViewController.xib; sourceTree = "<group>"; };
 		DD91ACEC23824B3D00D3D5A1 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		DD91ACEF23825A0200D3D5A1 /* FriendViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendViewCell.swift; sourceTree = "<group>"; };
+		DD91ACF123825A1100D3D5A1 /* FriendViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FriendViewCell.xib; sourceTree = "<group>"; };
+		DD91ACF423825B2800D3D5A1 /* SuggestFriendsProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestFriendsProvider.swift; sourceTree = "<group>"; };
+		DD91ACF7238271C100D3D5A1 /* SuggestFriendPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestFriendPresenter.swift; sourceTree = "<group>"; };
+		DD91ACF8238271C100D3D5A1 /* SuggestFriendWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestFriendWorker.swift; sourceTree = "<group>"; };
+		DD91ACF9238271C100D3D5A1 /* SuggestFriendRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestFriendRouter.swift; sourceTree = "<group>"; };
+		DD91ACFA238271C100D3D5A1 /* SuggestFriendModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestFriendModels.swift; sourceTree = "<group>"; };
+		DD91ACFB238271C100D3D5A1 /* SuggestFriendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestFriendViewController.swift; sourceTree = "<group>"; };
+		DD91ACFC238271C100D3D5A1 /* SuggestFriendAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestFriendAssembly.swift; sourceTree = "<group>"; };
+		DD91ACFD238271C100D3D5A1 /* SuggestFriendInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestFriendInteractor.swift; sourceTree = "<group>"; };
+		DD91AD05238271D600D3D5A1 /* SuggestFriendViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SuggestFriendViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +194,7 @@
 		DD91ACA5237E92A400D3D5A1 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				DD91ACF6238271A100D3D5A1 /* SuggestFriend */,
 				DD91ACD8237E9EE300D3D5A1 /* Contact */,
 				DD91ACB6237E93D900D3D5A1 /* Favorites */,
 				DD91ACB5237E93D200D3D5A1 /* Home */,
@@ -234,6 +257,8 @@
 		DD91ACD8237E9EE300D3D5A1 /* Contact */ = {
 			isa = PBXGroup;
 			children = (
+				DD91ACF323825B0600D3D5A1 /* Provider */,
+				DD91ACEE238259DE00D3D5A1 /* Cell */,
 				DD91ACD9237E9F0200D3D5A1 /* ContactPresenter.swift */,
 				DD91ACDA237E9F0200D3D5A1 /* ContactWorker.swift */,
 				DD91ACDB237E9F0200D3D5A1 /* ContactRouter.swift */,
@@ -252,6 +277,38 @@
 				DD91ACEC23824B3D00D3D5A1 /* Utils.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		DD91ACEE238259DE00D3D5A1 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				DD91ACEF23825A0200D3D5A1 /* FriendViewCell.swift */,
+				DD91ACF123825A1100D3D5A1 /* FriendViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		DD91ACF323825B0600D3D5A1 /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+				DD91ACF423825B2800D3D5A1 /* SuggestFriendsProvider.swift */,
+			);
+			path = Provider;
+			sourceTree = "<group>";
+		};
+		DD91ACF6238271A100D3D5A1 /* SuggestFriend */ = {
+			isa = PBXGroup;
+			children = (
+				DD91ACF7238271C100D3D5A1 /* SuggestFriendPresenter.swift */,
+				DD91ACF8238271C100D3D5A1 /* SuggestFriendWorker.swift */,
+				DD91ACF9238271C100D3D5A1 /* SuggestFriendRouter.swift */,
+				DD91ACFA238271C100D3D5A1 /* SuggestFriendModels.swift */,
+				DD91ACFB238271C100D3D5A1 /* SuggestFriendViewController.swift */,
+				DD91ACFC238271C100D3D5A1 /* SuggestFriendAssembly.swift */,
+				DD91ACFD238271C100D3D5A1 /* SuggestFriendInteractor.swift */,
+				DD91AD05238271D600D3D5A1 /* SuggestFriendViewController.xib */,
+			);
+			path = SuggestFriend;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -315,7 +372,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD91ACB4237E92B900D3D5A1 /* LoginViewController.xib in Resources */,
+				DD91AD06238271D600D3D5A1 /* SuggestFriendViewController.xib in Resources */,
 				DD91ACE8237E9F4800D3D5A1 /* ContactViewController.xib in Resources */,
+				DD91ACF223825A1100D3D5A1 /* FriendViewCell.xib in Resources */,
 				DD91ACEA237EA0CE00D3D5A1 /* FavoritesViewController.xib in Resources */,
 				DD91AC93237E922100D3D5A1 /* LaunchScreen.storyboard in Resources */,
 				DD91AC90237E922100D3D5A1 /* Assets.xcassets in Resources */,
@@ -371,9 +430,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD91AD00238271C100D3D5A1 /* SuggestFriendRouter.swift in Sources */,
 				DD91ACA1237E929100D3D5A1 /* ApplicationCoordinator.swift in Sources */,
 				DD91ACE4237E9F0200D3D5A1 /* ContactViewController.swift in Sources */,
 				DD91ACC1237E93EB00D3D5A1 /* HomeModels.swift in Sources */,
+				DD91ACF523825B2800D3D5A1 /* SuggestFriendsProvider.swift in Sources */,
 				DD91ACB0237E92B900D3D5A1 /* LoginModels.swift in Sources */,
 				DD91ACA2237E929100D3D5A1 /* HomeTabCoordinator.swift in Sources */,
 				DD91ACBE237E93EB00D3D5A1 /* HomePresenter.swift in Sources */,
@@ -387,13 +448,20 @@
 				DD91AC87237E922000D3D5A1 /* AppDelegate.swift in Sources */,
 				DD91ACD0237E93FF00D3D5A1 /* FavoritesViewController.swift in Sources */,
 				DD91AC9E237E925100D3D5A1 /* RouterCoordinatorLogic.swift in Sources */,
+				DD91AD03238271C100D3D5A1 /* SuggestFriendAssembly.swift in Sources */,
+				DD91AD01238271C100D3D5A1 /* SuggestFriendModels.swift in Sources */,
 				DD91ACB2237E92B900D3D5A1 /* LoginInteractor.swift in Sources */,
 				DD91ACE6237E9F0200D3D5A1 /* ContactInteractor.swift in Sources */,
+				DD91AD04238271C100D3D5A1 /* SuggestFriendInteractor.swift in Sources */,
 				DD91ACCE237E93FF00D3D5A1 /* FavoritesRouter.swift in Sources */,
 				DD91ACC0237E93EB00D3D5A1 /* HomeRouter.swift in Sources */,
 				DD91ACC2237E93EB00D3D5A1 /* HomeViewController.swift in Sources */,
 				DD91ACE0237E9F0200D3D5A1 /* ContactPresenter.swift in Sources */,
+				DD91AD02238271C100D3D5A1 /* SuggestFriendViewController.swift in Sources */,
+				DD91ACF023825A0200D3D5A1 /* FriendViewCell.swift in Sources */,
+				DD91ACFE238271C100D3D5A1 /* SuggestFriendPresenter.swift in Sources */,
 				DD91ACD2237E93FF00D3D5A1 /* FavoritesInteractor.swift in Sources */,
+				DD91ACFF238271C100D3D5A1 /* SuggestFriendWorker.swift in Sources */,
 				DD91ACE5237E9F0200D3D5A1 /* ContactAssembly.swift in Sources */,
 				DD91ACBF237E93EB00D3D5A1 /* HomeWorker.swift in Sources */,
 				DD91ACAE237E92B900D3D5A1 /* LoginRouter.swift in Sources */,
