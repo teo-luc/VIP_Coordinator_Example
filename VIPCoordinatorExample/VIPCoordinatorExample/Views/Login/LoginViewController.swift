@@ -13,11 +13,11 @@ protocol LoginDisplayLogic: class {
 }
 
 class LoginViewController: UIViewController, LoginDisplayLogic {
-    var interactor: LoginBusinessLogic?
-    var router: (NSObjectProtocol & LoginRoutingLogic & LoginDataPassing)?
+    var interactor : LoginBusinessLogic?
+    var router     : (NSObjectProtocol & LoginRoutingLogic & LoginDataPassing)?
     
-    @IBOutlet weak var firstName: UITextField!
-    @IBOutlet weak var lastName: UITextField!
+    @IBOutlet weak var firstName : UITextField!
+    @IBOutlet weak var lastName  : UITextField!
 
     // MARK: Object lifecycle
     deinit {
@@ -43,7 +43,7 @@ class LoginViewController: UIViewController, LoginDisplayLogic {
     @IBAction func loginAction(_ sender: Any) {
         //
         let firstName = self.firstName.text ?? "#FirstName"
-        let lastName = self.lastName.text ?? "#LastName"
+        let lastName  = self.lastName.text ?? "#LastName"
         //
         router?.moveToHomeTab(userId: 911, firstName: firstName, lastName: lastName)
     }
